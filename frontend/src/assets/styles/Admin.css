@@ -1,0 +1,464 @@
+/* frontend/src/assets/styles/Admin.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Admin Layout */
+.admin-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Admin Header */
+.admin-header {
+    background: linear-gradient(90deg, #6b48ff, #00ddeb) !important;
+}
+
+/* Admin Sidebar */
+.admin-sidebar {
+    background: #2c3e50;
+    padding: 20px;
+    height: calc(100vh - 56px);
+    position: sticky;
+    top: 56px;
+}
+
+.admin-sidebar .nav-link {
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.admin-sidebar .nav-link:hover {
+    background: #34495e;
+    color: #00ddeb;
+}
+
+.admin-sidebar .nav-link.active {
+    background: linear-gradient(90deg, #6b48ff, #00ddeb);
+    color: white;
+}
+
+/* Admin Content */
+.admin-content {
+    padding: 30px;
+    background: #fff;
+    min-height: calc(100vh - 56px - 60px);
+}
+
+/* Admin Footer */
+.admin-footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Admin Tables */
+.admin-table th,
+.admin-table td {
+    vertical-align: middle;
+}
+
+.admin-table .btn {
+    margin-right: 5px;
+}
+
+/* Admin Forms */
+.admin-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.admin-form .form-control:focus {
+    border-color: #6b48ff;
+    box-shadow: 0 0 5px rgba(107, 72, 255, 0.3);
+}
+
+.admin-form .btn-primary {
+    background: linear-gradient(90deg, #6b48ff, #00ddeb);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.admin-form .btn-primary:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #00ddeb, #6b48ff);
+}
+
+/* Admin Cards */
+.admin-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.admin-card h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.admin-card p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #6b48ff;
+}
+
+.admin-container {
+    padding: 20px;
+}
+
+.admin-card {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-table th,
+.admin-table td {
+    vertical-align: middle;
+}
+
+.admin-form .form-control {
+    border-radius: 5px;
+}
+
+.admin-card .card-body {
+    padding: 1.5rem;
+}
+
+.alert-danger {
+    font-size: 0.9rem;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.table img {
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-outline-primary,
+.btn-outline-danger {
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.dropdown-toggle {
+    min-width: 120px;
+    text-align: center;
+}
+
+.add-blog-container {
+    padding: 20px;
+}
+
+.add-blog-container .quill {
+    min-height: 200px;
+    z-index: 2;
+    position: relative;
+}
+
+.add-blog-container .ql-editor {
+    min-height: 150px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 2;
+    visibility: visible !important;
+    position: relative;
+}
+
+.add-blog-container .ql-container {
+    border-bottom: 1px solid #ccc !important;
+    z-index: 2;
+    position: relative;
+}
+
+.add-blog-container .ql-toolbar {
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+
+/* Đảm bảo ReactQuill không bị ẩn khi focus hoặc active */
+.add-blog-container .ql-editor:focus,
+.add-blog-container .ql-editor:active {
+    visibility: visible !important;
+    display: block !important;
+    opacity: 1 !important;
+}
+
+/* Đảm bảo container bao quanh không ảnh hưởng */
+.add-blog-container .ql-container:focus-within {
+    visibility: visible !important;
+    display: block !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.admin-card .pagination {
+    justify-content: center;
+}
+
+.admin-card .pagination .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.admin-card .pagination .page-link {
+    color: #007bff;
+}
+
+.admin-card .pagination .page-link:hover {
+    background-color: #e9ecef;
+}
+
+
+
+
+.admin-container {
+    padding: 20px;
+}
+
+.admin-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.admin-card .form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.admin-card .form-control {
+    border-radius: 5px;
+}
+
+.admin-card .btn-primary {
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.admin-card .table th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: 600;
+}
+
+.admin-card .pagination {
+    justify-content: center;
+}
+
+.admin-card .pagination .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.admin-card .pagination .page-link {
+    color: #007bff;
+}
+
+.admin-card .pagination .page-link:hover {
+    background-color: #e9ecef;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* frontend/src/assets/styles/Admin.css */
+.admin-container {
+    padding: 20px;
+}
+
+.status-badge {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+}
+
+.action-column {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* Khoảng cách giữa các nút */
+}
+
+.action-btn {
+    transition: all 0.2s ease;
+}
+
+.toggle-btn {
+    font-size: 0.85rem;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.toggle-btn:hover {
+    opacity: 0.9;
+}
+
+.edit-btn,
+.delete-btn {
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+.edit-btn {
+    color: #007bff;
+}
+
+.edit-btn:hover {
+    color: #0056b3;
+}
+
+.delete-btn {
+    color: #dc3545;
+}
+
+.delete-btn:hover {
+    color: #a71d2a;
+}
+
+/* Đảm bảo các nút trong cột hành động không bị lệch */
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* frontend/src/assets/styles/Admin.css */
+.admin-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.admin-main {
+    flex: 1;
+}
+
+.admin-sidebar {
+    background-color: #2c3e50;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.admin-sidebar .nav-link {
+    color: #ecf0f1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.admin-sidebar .nav-link:hover {
+    background-color: #34495e;
+}
+
+.admin-sidebar .nav-link.active {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.admin-content {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.admin-footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px 0;
+    text-align: center;
+}
