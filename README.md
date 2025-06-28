@@ -121,7 +121,7 @@ No additional environment variables are required for the admin dashboard.
 - Restrict IP access in MongoDB Atlas to trusted sources.
 
 ## For Support, Contact:
-- 📧 **Email**: `<sausurajpal@gmail.com>` (e.g., xoandev163@gmail.com)
+- 📧 **Email**: `<sausurajpal@gmail.com>` (e.g., google@gmail.com)
 - 🌐 **GitHub**: `https://github.com/<NguyenNhatHuynh>`
 
 (Status Project : Done Version 1)
